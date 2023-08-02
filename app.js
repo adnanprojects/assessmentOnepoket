@@ -18,6 +18,9 @@ async function wordCount() {
   }
 }
 
+// Task 3
+wordCount();
+
 // async function wordCount() {
 //   const filePath = path.join(__dirname, ".", "data.txt");
 
@@ -30,15 +33,12 @@ async function wordCount() {
 //   });
 // }
 
+// Task 2
+console.log(data.sum([1,2,3,4,5,6]));
+
+// Task 1
 app.use((req, res) => {
-  // Task 1
   res.send("<h1>Hello, World!</h1>");
-
-  // Task 2
-  console.log(data.sum([1, 2, 3, 9, 8, 7, 4]));
-
-  // Task 3
-  wordCount();
 });
 
 app.listen(port, () => {
